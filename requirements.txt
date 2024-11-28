@@ -1,1 +1,3 @@
 openfoodfacts
+"fastapi[standard]"
+notebook

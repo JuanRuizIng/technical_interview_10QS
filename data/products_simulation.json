@@ -1,0 +1,254 @@
+[
+    {
+        "product_name": "Organic Coffee Beans (1lb)",
+        "our_price": 14.99,
+        "category": "Beverages",
+        "current_stock": 45,
+        "restock_threshold": 25,
+        "date_to_restock": "2023-12-01",
+        "supplier": "Bean Brothers"
+    },
+    {
+        "product_name": "Premium Green Tea (50 bags)",
+        "our_price": 8.99,
+        "category": "Beverages",
+        "current_stock": 32,
+        "restock_threshold": 20,
+        "date_to_restock": "2023-12-05",
+        "supplier": "Tee Time Imports"
+    },
+    {
+        "product_name": "Masala Chai Mix (12oz)",
+        "our_price": 9.99,
+        "category": "beverages",
+        "current_stock": 18,
+        "restock_threshold": 15,
+        "date_to_restock": "2023-12-10",
+        "supplier": "Spice World"
+    },
+    {
+        "product_name": "Yerba Mate Loose Leaf (1lb)",
+        "our_price": 12.99,
+        "category": "Beverages",
+        "current_stock": 5,
+        "restock_threshold": 10,
+        "date_to_restock": "2023-12-15",
+        "supplier": "Sweet"
+    },
+    {
+        "product_name": "Hot Chocolate Mix (1lb)",
+        "our_price": 7.99,
+        "category": "Beverages",
+        "current_stock": 50,
+        "restock_threshold": 30,
+        "date_to_restock": "2023-12-20",
+        "supplier": "Sweet"
+    },
+    {
+        "product_name": "Earl Grey Tea (100 bags)",
+        "our_price": 11.99,
+        "category": "beverages",
+        "current_stock": 28,
+        "restock_threshold": 25,
+        "date_to_restock": "2023-12-25",
+        "supplier": "Mr Tea"
+    },
+    {
+        "product_name": "Espresso Beans (1lb)",
+        "our_price": 16.99,
+        "category": "Beverages",
+        "current_stock": 22,
+        "restock_threshold": 20,
+        "date_to_restock": "2023-12-30",
+        "supplier": "Bean Brothers"
+    },
+    {
+        "product_name": "Chamomile Tea (30 bags)",
+        "our_price": 6.99,
+        "category": "Tea",
+        "current_stock": 12,
+        "restock_threshold": 15,
+        "date_to_restock": "2023-12-05",
+        "supplier": "Tea Time Imports"
+    },
+    {
+        "product_name": "Matcha Green Tea Powder (4oz)",
+        "our_price": 19.99,
+        "category": "Beverages",
+        "current_stock": 8,
+        "restock_threshold": null,
+        "date_to_restock": "2023-12-10",
+        "supplier": "Tea Time Imports"
+    },
+    {
+        "product_name": "Decaf Coffee Beans (1lb)",
+        "our_price": 15.99,
+        "category": "Beverages",
+        "current_stock": 15,
+        "restock_threshold": 15,
+        "date_to_restock": "2023-12-15",
+        "supplier": "Bean Brothers"
+    },
+    {
+        "product_name": "Mint Tea (25 bags)",
+        "our_price": 7.49,
+        "category": "Beverages",
+        "current_stock": "out of stock",
+        "restock_threshold": 12,
+        "date_to_restock": "2023-12-20",
+        "supplier": "Tea Time Imports"
+    },
+    {
+        "product_name": "Instant Coffee (8oz)",
+        "our_price": 11.99,
+        "category": "coffee",
+        "current_stock": 25,
+        "restock_threshold": 20,
+        "date_to_restock": "2023-12-25",
+        "supplier": "Coffee Corral"
+    },
+    {
+        "product_name": "Rooibos Tea (40 bags)",
+        "our_price": null,
+        "category": "Beverages",
+        "current_stock": 30,
+        "restock_threshold": 20,
+        "date_to_restock": "2023-12-30",
+        "supplier": "Tea Time Imports"
+    },
+    {
+        "product_name": "cold brew concentrate",
+        "our_price": 13.99,
+        "category": "Beverages",
+        "current_stock": 19,
+        "restock_threshold": 15,
+        "date_to_restock": "2023-12-05",
+        "supplier": "Bean Brothers"
+    },
+    {
+        "product_name": "Organic Coffee Beans (1lb)",
+        "our_price": 14.99,
+        "category": "Beverages",
+        "current_stock": 45,
+        "restock_threshold": 25,
+        "date_to_restock": "2022-11-15",
+        "supplier": "Bean Brothers"
+    },
+    {
+        "product_name": "Premium Green Tea (50 bags)",
+        "our_price": 8.99,
+        "category": "Beverages",
+        "current_stock": 32,
+        "restock_threshold": 20,
+        "date_to_restock": "2022-11-10",
+        "supplier": "Tee Time Imports"
+    },
+    {
+        "product_name": "Masala Chai Mix (12oz)",
+        "our_price": 9.99,
+        "category": "beverages",
+        "current_stock": 18,
+        "restock_threshold": 15,
+        "date_to_restock": "2022-11-18",
+        "supplier": "Spice World"
+    },
+    {
+        "product_name": "Yerba Mate Loose Leaf (1lb)",
+        "our_price": 12.99,
+        "category": "Beverages",
+        "current_stock": 5,
+        "restock_threshold": 10,
+        "date_to_restock": "2022-11-01",
+        "supplier": "Sweet"
+    },
+    {
+        "product_name": "Hot Chocolate Mix (1lb)",
+        "our_price": 7.99,
+        "category": "Beverages",
+        "current_stock": 50,
+        "restock_threshold": 30,
+        "date_to_restock": "2022-11-12",
+        "supplier": "Sweet"
+    },
+    {
+        "product_name": "Earl Grey Tea (100 bags)",
+        "our_price": 11.99,
+        "category": "beverages",
+        "current_stock": 28,
+        "restock_threshold": 25,
+        "date_to_restock": "2022-11-14",
+        "supplier": "Mr Tea"
+    },
+    {
+        "product_name": "Espresso Beans (1lb)",
+        "our_price": 16.99,
+        "category": "Beverages",
+        "current_stock": 22,
+        "restock_threshold": 20,
+        "date_to_restock": "2022-11-16",
+        "supplier": "Bean Brothers"
+    },
+    {
+        "product_name": "Chamomile Tea (30 bags)",
+        "our_price": 6.99,
+        "category": "Tea",
+        "current_stock": 12,
+        "restock_threshold": 15,
+        "date_to_restock": "2022-11-05",
+        "supplier": "Tea Time Imports"
+    },
+    {
+        "product_name": "Matcha Green Tea Powder (4oz)",
+        "our_price": 19.99,
+        "category": "Beverages",
+        "current_stock": 8,
+        "restock_threshold": null,
+        "date_to_restock": "2022-11-17",
+        "supplier": "Tea Time Imports"
+    },
+    {
+        "product_name": "Decaf Coffee Beans (1lb)",
+        "our_price": 15.99,
+        "category": "Beverages",
+        "current_stock": 15,
+        "restock_threshold": 15,
+        "date_to_restock": "2022-11-13",
+        "supplier": "Bean Brothers"
+    },
+    {
+        "product_name": "Mint Tea (25 bags)",
+        "our_price": 7.49,
+        "category": "Beverages",
+        "current_stock": "out of stock",
+        "restock_threshold": 12,
+        "date_to_restock": "2022-10-30",
+        "supplier": "Tea Time Imports"
+    },
+    {
+        "product_name": "Instant Coffee (8oz)",
+        "our_price": 11.99,
+        "category": "coffee",
+        "current_stock": 25,
+        "restock_threshold": 20,
+        "date_to_restock": "2022-11-19",
+        "supplier": "Coffee Corral"
+    },
+    {
+        "product_name": "Rooibos Tea (40 bags)",
+        "our_price": null,
+        "category": "Beverages",
+        "current_stock": 30,
+        "restock_threshold": 20,
+        "date_to_restock": "2022-11-08",
+        "supplier": "Tea Time Imports"
+    },
+    {
+        "product_name": "cold brew concentrate",
+        "our_price": 13.99,
+        "category": "Beverages",
+        "current_stock": 19,
+        "restock_threshold": 15,
+        "date_to_restock": "2022-11-20",
+        "supplier": "Bean Brothers"
+    }
+]
