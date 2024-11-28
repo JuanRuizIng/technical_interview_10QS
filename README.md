@@ -73,8 +73,15 @@ docker compose up -d
 
 #### To generated the recommendations and system alerts:
 ```bash
-python .\src\analysis.py
+python .\src\analysis.py <path_of_you_csv_file>
 ```
+
+In my case:
+
+```bash
+python .\src\analysis.py C:\Users\LENOVO\Documents\GitHub\technical_interview_10QS\data\products.csv
+```
+
 
 ## Limitation 💢
 In my case, the biggest limitation I found was that there were no APIs dealing with the products there, and if there were, it had only nutrient contents, i.e., it did not allow me to compare prices. So, the solution was to create and manipulate my own API and make other people not to worry about running it using docker.
