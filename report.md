@@ -1,9 +1,9 @@
-# # 10EQS Data Integration Challenge: Report of Products
+# 10EQS Data Integration Challenge: Report of Products
 
 ## Data quality issues
 1. The PDF data could not be accessed in its entirety, so that sometimes the columns were 'split' and not all the columns were visible, so at least the last columns had to be given an approximate name taking into account logic.
 
-(I edit this camp for the image but in the markdown editor of github)
+![image](https://github.com/user-attachments/assets/c136e965-acb6-4db2-9f0d-fa37f5321535)
 
 2. There were not too many APIs that dealt with the products, so some that were candidates after I registered only gave you the food components of these products.
 3. There was data that was effectively cleaned and did not respect the guidelines, such as 'out of the stock' in mostly numeric columns, which was transformed into 0, and dates, in yyyy/mm/dd format and not yyyy-mm-dd.
