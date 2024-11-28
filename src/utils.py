@@ -1,5 +1,6 @@
 import requests
 import pandas as pd
+import sys
 
 def get_products_api():
     """ It returns a list of products from the FastAPI API 
@@ -79,7 +80,7 @@ def contac_df():
     """
     df1 = get_products_api()
     df1 = general_cleaning_data(df1)
-    df2 = pd.read_csv("./data/products.csv")
+    df2 = pd.read_csv(sys.argv[1])
     df2 = general_cleaning_data(df2)
     result = pd.concat([df1, df2])
     return result
