@@ -147,4 +147,60 @@ def variation_price_top(df_target, df_comparation):
     
 
 def product_variation_for_country(country_name, df_products, df_target, df_comparation):
-    pass
+    """
+    Calculate the price variation of products in a specific country in local currency with respect to USD.
+
+    Args:
+        country_name (str): Name of the country to analyze (e.g., 'Colombia').
+        df_products (pd.DataFrame): DataFrame with product details including prices in USD.
+        df_target (pd.DataFrame): Data from the API for the target date.
+        df_comparation (pd.DataFrame): Data from the API for the comparation date.
+    
+    Returns:
+        dict: Product price variations in local currency.
+    
+    Exceptions:
+        Exception: Error message.
+    """
+    try:
+        # Get the currency symbol for the specified country
+        currency_symbol = None
+        for code, name in countries.items():
+            if name.lower() == country_name.lower():
+                currency_symbol = code
+                break
+
+        if not currency_symbol:
+            raise ValueError(f"Country '{country_name}' is not in the supported list.")
+
+        # Fetch exchange rates for the country
+        rate_target = df_target[currency_symbol].values[0]
+        rate_comparation = df_comparation[currency_symbol].values[0]
+
+        # Check for missing or invalid rates
+        if pd.isna(rate_target) or pd.isna(rate_comparation):
+            raise ValueError(f"Exchange rates for {country_name} are missing.")
+
+        # Calculate the local price variations for each product
+        product_variations = {}
+        for index, row in df_products.iterrows():
+            price_usd = float(str(row['our_price']).replace('$', '').strip())
+            price_local_target = price_usd * rate_target
+            price_local_comparation = price_usd * rate_comparation
+            variation = round(price_local_target - price_local_comparation, 2)
+
+            product_variations[row['product_name']] = {
+                "price_target_date": round(price_local_target, 2),
+                "price_comparation_date": round(price_local_comparation, 2),
+                "variation": variation
+            }
+
+        # Save the results to a JSON file
+        with open(f"./data/product_variation_{country_name.lower()}.json", "w") as json_file:
+            json.dump(product_variations, json_file, indent=4)
+
+        return product_variations
+
+    except Exception as e:
+        return str(e)
+

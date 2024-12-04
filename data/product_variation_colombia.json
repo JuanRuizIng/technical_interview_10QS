@@ -1,0 +1,62 @@
+{
+    " \"Organic Coffee Beans (1lb)\"": {
+        "price_target_date": 65822.57,
+        "price_comparation_date": 65584.88,
+        "variation": 237.69
+    },
+    " \"Premium Green Tea (50 bags)\"": {
+        "price_target_date": 39475.98,
+        "price_comparation_date": 39333.43,
+        "variation": 142.55
+    },
+    " \"Masala Chai Mix (12oz)\"": {
+        "price_target_date": 43867.08,
+        "price_comparation_date": 43708.67,
+        "variation": 158.41
+    },
+    " \"Yerba Mate Loose Leaf (1lb)\"": {
+        "price_target_date": 57040.37,
+        "price_comparation_date": 56834.4,
+        "variation": 205.98
+    },
+    " \"Hot Chocolate Mix (1lb)\"": {
+        "price_target_date": 35084.88,
+        "price_comparation_date": 34958.18,
+        "variation": 126.69
+    },
+    "Earl Grey Tea (100 bags)": {
+        "price_target_date": 52649.28,
+        "price_comparation_date": 52459.15,
+        "variation": 190.12
+    },
+    "Espresso Beans (1lb)": {
+        "price_target_date": 74604.77,
+        "price_comparation_date": 74335.36,
+        "variation": 269.41
+    },
+    " \"Chamomile Tea (30 bags)\"": {
+        "price_target_date": 30693.78,
+        "price_comparation_date": 30582.94,
+        "variation": 110.84
+    },
+    " \"Decaf Coffee Beans (1lb)\"": {
+        "price_target_date": 70213.67,
+        "price_comparation_date": 69960.12,
+        "variation": 253.55
+    },
+    " \"Mint Tea (25 bags)\"": {
+        "price_target_date": 32889.33,
+        "price_comparation_date": 32770.56,
+        "variation": 118.77
+    },
+    " \"Instant Coffee (8oz)\"": {
+        "price_target_date": 52649.28,
+        "price_comparation_date": 52459.15,
+        "variation": 190.12
+    },
+    " \"cold brew concentrate\"": {
+        "price_target_date": 61431.47,
+        "price_comparation_date": 61209.64,
+        "variation": 221.84
+    }
+}
