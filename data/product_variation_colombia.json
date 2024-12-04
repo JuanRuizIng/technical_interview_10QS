@@ -1,0 +1,67 @@
+{
+    " \"ORGANIC COFFEE BEANS (1LB)\"": {
+        "price_target_date": 66961.62,
+        "price_comparation_date": 59802.21,
+        "variation": 7159.4
+    },
+    " \"PREMIUM GREEN TEA (50 BAGS)\"": {
+        "price_target_date": 40159.1,
+        "price_comparation_date": 35865.37,
+        "variation": 4293.73
+    },
+    " \"MASALA CHAI MIX (12OZ)\"": {
+        "price_target_date": 44626.19,
+        "price_comparation_date": 39854.84,
+        "variation": 4771.34
+    },
+    " \"YERBA MATE LOOSE LEAF (1LB)\"": {
+        "price_target_date": 58027.44,
+        "price_comparation_date": 51823.26,
+        "variation": 6204.18
+    },
+    " \"HOT CHOCOLATE MIX (1LB)\"": {
+        "price_target_date": 35692.02,
+        "price_comparation_date": 31875.89,
+        "variation": 3816.12
+    },
+    "EARL GREY TEA (100 BAGS)": {
+        "price_target_date": 53560.36,
+        "price_comparation_date": 47833.79,
+        "variation": 5726.57
+    },
+    "ESPRESSO BEANS (1LB)": {
+        "price_target_date": 75895.79,
+        "price_comparation_date": 67781.16,
+        "variation": 8114.63
+    },
+    " \"CHAMOMILE TEA (30 BAGS)\"": {
+        "price_target_date": 31224.93,
+        "price_comparation_date": 27886.42,
+        "variation": 3338.51
+    },
+    " \"MATCHA GREEN TEA POWDER (4OZ)\"": {
+        "price_target_date": 89297.04,
+        "price_comparation_date": 79749.58,
+        "variation": 9547.47
+    },
+    " \"DECAF COFFEE BEANS (1LB)\"": {
+        "price_target_date": 71428.7,
+        "price_comparation_date": 63791.68,
+        "variation": 7637.02
+    },
+    " \"MINT TEA (25 BAGS)\"": {
+        "price_target_date": 33458.47,
+        "price_comparation_date": 29881.16,
+        "variation": 3577.31
+    },
+    " \"INSTANT COFFEE (8OZ)\"": {
+        "price_target_date": 53560.36,
+        "price_comparation_date": 47833.79,
+        "variation": 5726.57
+    },
+    " \"COLD BREW CONCENTRATE\"": {
+        "price_target_date": 62494.53,
+        "price_comparation_date": 55812.74,
+        "variation": 6681.79
+    }
+}

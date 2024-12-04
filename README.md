@@ -16,8 +16,8 @@ The repository is structured to ensure a seamless experience, from setting up th
 The objective is to:
 
 1. **Process Internal Data**: Read and clean the provided `products.csv` dataset.  
-2. **Integrate External Data**: Incorporate data from an external source (chosen API) to compare internal pricing with market trends. For difficulties, I have created my own API with FastAPI.
-3. **Generate Insights**: Provide actionable recommendations based on price comparisons, stock levels, and market trends.  
+2. **Integrate External Data**: Incorporate data from an external source (chosen API) to compare internal pricing with market trends. The API was [Open Exchange Rates API](https://docs.openexchangerates.org/reference/api-introduction).
+3. **Generate Insights**: The insights generated include exchange rate analysis to identify currency trends, top variations to prioritize markets, and product price comparisons in local currencies. These insights guide pricing adjustments, promotional strategies, and resource allocation to align with market conditions.
 4. **Document Findings**: Summarize key insights in a business-friendly format.  
 
 ---
@@ -27,20 +27,18 @@ The objective is to:
 ```plaintext
 ├── README.md           # Setup & analysis documentation
 ├── data/
-|   ├── products_simulation.json      #API JSON simulation
+|   ├── product_variation_colombia.json      #JSON with the variation products in Colombia (in local currency)
+|   ├── variation_price.json        # JSON with variation (in local currency) of the price for each country
+|   ├── variation_price_top.json    # JSON with the variation (in local currency) of the price for each country and save the top 5 results
 │   └── products.csv    # Internal product data
 ├── src/
-|   ├── analysis.ipynb     #The notebook with the most organized graphics and view the pre-final process.
 │   ├── analysis.py     # Main script for generating insights
-│   └── utils.py        # Helper functions for data cleaning and analysis
+│   └── utils.py        # Helper functions for data cleaning and the functions to compare prices for different dates
 ├── requirements.txt    # Python dependencies
 └── report.md           # Generated insights report
 ```
 
 ## Running the code ⏯️
-
-> [!NOTE]
-> Notebook are omitted.
 
 #### Clone the repository:
 
@@ -64,14 +62,14 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-#### To start the docker container:
+#### To configure .env
 
-1. Start the containers
+In a file .env in the root folder you need:
 ```bash
-docker compose up -d
+API_ID=<your-openexchangerates-api-key>
 ```
 
-#### To generated the recommendations and system alerts:
+#### To generated the reports:
 ```bash
 python .\src\analysis.py <path_of_you_csv_file>
 ```
@@ -84,11 +82,8 @@ python .\src\analysis.py C:\Users\LENOVO\Documents\GitHub\technical_interview_10
 
 
 ## Limitation 💢
-In my case, the biggest limitation I found was that there were no APIs dealing with the products there, and if there were, it had only nutrient contents, i.e., it did not allow me to compare prices. So, the solution was to create and manipulate my own API and make other people not to worry about running it using docker.
+In my case, the biggest limitation I found was that there were no APIs dealing with the products there, and if there were, it had only nutrient contents, i.e., it did not allow me to compare prices. So, the solution was search for an API to measure the exchange rate from dollars to different currencies in latin america.
 
 ## Time spent on each component ⏲️
-* Discovering the API: 50 minutes
-* Making my own API with FastAPI: 20 minutes
-* Performing data extraction, transformation and loading functions (alerting and recommendation functions): 30 minutes
-* EDA: 15 minutes
-* Dockerizing: 15 minutes
+* Discovering the API: 80 minutes
+* Performing data extraction, transformation and loading functions (report functions): 40 minutes
