@@ -12,7 +12,6 @@ data_comparation = get_data_comparation(comparation_date)
 
 df_products = pd.read_csv(sys.argv[1])
 df_products = general_cleaning_data(df_products)
-df_products.columns = df_products.columns.str.strip().str.lower().str.replace(' ', '_')
 df_target = pd.DataFrame(data_target["rates"], index=[0])
 df_comparation = pd.DataFrame(data_comparation["rates"], index=[0])
 
