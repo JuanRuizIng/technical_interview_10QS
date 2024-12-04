@@ -12,6 +12,51 @@ load_dotenv("./.env")
 
 api_id = os.getenv("API_ID")
 
+
+def general_cleaning_data(df):
+    """ It cleans the original DataFrame 
+    
+    Args:
+        df (pd.DataFrame): A DataFrame with the products
+        
+    Returns:
+        pd.DataFrame: A cleaned DataFrame
+    """
+    df.columns = df.columns.str.strip().str.lower().str.replace(' ', '_')
+    
+    if 'product_name' in df.columns and 'product_name_' in df.columns:
+        df['product_name'] = df['product_name'].combine_first(df['product_name_'])
+        df = df.drop(columns=['product_name_'])
+
+    if 'date_to_restock' in df.columns and 'date_to_restock_' in df.columns:
+        df['date_to_restock'] = df['date_to_restock'].combine_first(df['date_to_restock_'])
+        df = df.drop(columns=['date_to_restock_'])
+    
+    if 'supplier' in df.columns and 'supplier_' in df.columns:
+        df['supplier'] = df['supplier'].combine_first(df['supplier_'])
+        df = df.drop(columns=['supplier_'])
+    
+    df['our_price'] = df['our_price'].replace({'\$': '', ',': ''}, regex=True).astype(float, errors='ignore')
+
+    df['date_to_restock'] = pd.to_datetime(df['date_to_restock'], errors='coerce')
+
+    df = df.drop_duplicates(subset=['product_name', 'date_to_restock', 'supplier'])
+
+    df = df.dropna(subset=['product_name', 'our_price', 'category', 'current_stock', 'supplier'])
+
+    df['current_stock'] = df['current_stock'].replace('out of stock', 0)
+    
+    df['current_stock'] = pd.to_numeric(df['current_stock'], errors='coerce')
+
+    # Convert all string columns to uppercase
+    str_cols = df.select_dtypes(include=['object']).columns
+    df[str_cols] = df[str_cols].apply(lambda x: x.str.upper())
+
+    df['restock_threshold'] = df['restock_threshold'].fillna(0).astype(int)
+
+    return df
+
+
 def get_data_target(target_date):
     """Get data from the API for the target date
     Args:
