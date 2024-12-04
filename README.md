@@ -40,9 +40,6 @@ The objective is to:
 
 ## Running the code ⏯️
 
-> [!NOTE]
-> Notebook are omitted.
-
 #### Clone the repository:
 
 Execute the following command to clone the repository:
@@ -63,6 +60,13 @@ python -m venv venv
 
 ```bash
 pip install -r requirements.txt
+```
+
+#### To configure .env
+
+In a file .env in the root folder you need:
+```bash
+API_ID=<your-openexchangerates-api-key>
 ```
 
 #### To generated the reports:
